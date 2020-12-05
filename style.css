@@ -80,3 +80,9 @@ nav > ul > li > a {
     height: 19px;
     margin-top: 2px;
 }
+
+#logo-icon {
+    position: absolute;
+    right: 320px;
+    top: 40px;
+}
