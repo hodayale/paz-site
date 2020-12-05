@@ -10,7 +10,7 @@ body {
 }
 
 .heading {
-    background-color: gray;
+    background-color: rgb(151, 150, 150);
     width: 100%;
     height: 105px;
 }
@@ -42,4 +42,19 @@ nav > ul > li > a {
     text-decoration: none;
     font-weight: bold;
     font-family: Arial;
+    font-size: 15px;
+}
+
+#language {
+    color:white;
+    font-weight: bold;
+    margin-left: 10px; 
+    font-family: Ariel;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#language:hover {
+    text-decoration: underline;
+    color:#005CA0;
 }
