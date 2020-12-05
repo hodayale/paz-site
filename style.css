@@ -49,6 +49,7 @@ nav > ul > li > a {
     color:white;
     font-weight: bold;
     margin-left: 10px; 
+    margin-top: 5px;
     font-family: Ariel;
     font-size: 12px;
     text-decoration: none;
@@ -57,4 +58,21 @@ nav > ul > li > a {
 #language:hover {
     text-decoration: underline;
     color:#005CA0;
+}
+
+.search-row{
+    display: flex;
+}
+
+#search {
+    border-radius: 0 8px 0 0;
+    border-color: white;
+    width: 126px;
+    flex: 1;
+}
+
+#search-button {
+    width: 19px;
+    height: 19px;
+    margin-top: 2px;
 }
