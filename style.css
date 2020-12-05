@@ -1,12 +1,19 @@
 body {
     direction: rtl;
     text-align: right;
+    font-family: Arial;
 }
 
 .row {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
 }
 
 .heading {
@@ -39,7 +46,7 @@ nav > ul > li > a, .dropdown > li > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family: Arial;
+    
     font-size: 15px;
     position: relative;
 }
@@ -71,12 +78,11 @@ a:hover > .dropdown {
     font-weight: bold;
     margin-left: 10px; 
     margin-top: 5px;
-    font-family: Ariel;
     font-size: 12px;
     text-decoration: none;
 }
 
-#language:hover, a:hover {
+#language:hover, a:hover, .text > a:hover {
     text-decoration: underline;
     color:#005CA0;
 }
@@ -102,4 +108,47 @@ a:hover > .dropdown {
     position: absolute;
     right: 500px;
     top: 40px;
+}
+
+.images {
+    padding: 10px;
+    border-radius: 0 0 40px 0;
+}
+
+.text, .trans-back {
+    width: 228px;
+    height: 77px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px; 
+}
+
+.text {
+    color: white;
+    bottom: 40px;
+    font-size: 12px;
+}
+
+.text > a {
+    color: white;
+}
+
+p {
+    margin-top: -10px;
+}
+
+.read-more {
+    margin-right: 160px;
+}
+
+.text-pos {
+    position: relative;
+    margin: 0 auto;
+}
+
+.trans-back { 
+    background-color:  rgb(151, 150, 150);
+    opacity: 0.9;
+    border-radius: 0 0 40px 0;
 }
