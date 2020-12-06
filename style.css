@@ -18,7 +18,9 @@ body {
 }
 
 .heading {
-    background-color: rgb(151, 150, 150);
+    background: rgb(193,192,198);
+    background: linear-gradient(0deg, rgba(193,192,198,1) 0%, rgba(150,150,150,1) 10%);
+    /*background-color: rgb(151, 150, 150);*/
     width: 100%;
     height: 105px;
 }
@@ -86,7 +88,7 @@ nav > ul > li:hover > .dropdown {
     text-decoration: none;
 }
 
-#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover{
+#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover, .contact-design:hover, .contact-top-line-design > a:hover{
     text-decoration: underline;
     color:#005CA0;
 }
@@ -237,7 +239,8 @@ h3 {
 }
 
 .footer {
-    background-color: rgb(151, 150, 150);
+    background: rgb(193,192,198);
+    background: linear-gradient(180deg, rgba(193,192,198,1) 0%, rgba(150,150,150,1) 10%);
     width: 100%;
     height: 38px;
     position: fixed;
@@ -249,3 +252,81 @@ h3 {
     color: red;
     font-weight: 400;
 }
+
+.contact-page {
+    visibility: collapse;
+}
+
+
+/**********Contact page style************/
+.contact-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-design {
+    background: rgb(237,234,242);
+    background: linear-gradient(180deg, rgba(237,234,242,1) 70%, rgba(182,178,178,1) 100%);
+    text-decoration: none;
+    width: 110px;
+    height: 36px;
+    padding: 10px 10px 0px 80px;
+    margin-top: 50px;
+    color: black;
+}
+
+.row-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-top-line-design {
+    font-size: 12px;
+}
+
+.contact-top-line-design > p {
+    margin-top: 50px;
+}
+
+.contact-top-line-design > a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-top-line-design {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    width: 170px;
+}
+
+.headline-contact {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+#contact-form{
+    border: 1px solid darkgray;
+    width: 400px;
+    height: 400px;
+    border-radius: 0 40px 0 0;
+}
+
+#contact-form > h2 {
+    margin-right: 20px;
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
