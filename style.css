@@ -155,16 +155,45 @@ p {
 }
 
 .text-container {
-    border: 1px solid gray;
     width: 270px;
     height: 216px;
-    padding: 10px;
-    border-radius: 0 40px 0 0;
-    margin: 10px;
+
+    position: relative;
+    margin: 0 20px;
+}
+
+.header-pos, .link-pos, .img-pos, .erea-map, .img-map-pos {
+    position: absolute;
+}
+
+.header-pos {   
+    top: 0px;
+    right: 20px;
+}
+
+.img-pos {
+    right: 10px;
+    top: 50px;
+}
+
+.img-map-pos {
+    left: 10px;
+    top: 40px;
+}
+
+.link-pos {
+    bottom: 20px;
+    left: 20px;
+}
+
+.img-background {
+    margin: 0 auto;
+    display: block;
 }
 
 .erea-map {
-    margin-right: 160px;
+    top: 50px;
+    right: 10px;
 }
 
 h3 {
