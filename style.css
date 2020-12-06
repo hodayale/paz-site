@@ -148,6 +148,18 @@ p {
     margin-right: 160px;
 }
 
+/*add image after "קרא עוד"*/
+.read-more::after {
+    content : url('images/read_more_white.png');
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+}
+
+.read-more:hover::after, .link-pos:hover::after, .erea-map-pos:hover::after {
+    content : url('images/read_more_blue.png');
+}
+
 .text-pos {
     position: relative;
     margin: 0 auto;
@@ -162,12 +174,11 @@ p {
 .text-container {
     width: 270px;
     height: 216px;
-
     position: relative;
     margin: 0 20px;
 }
 
-.header-pos, .link-pos, .img-pos, .erea-map, .img-map-pos {
+.header-pos, .link-pos, .img-pos, .erea-map-pos, .img-map-pos {
     position: absolute;
 }
 
@@ -191,14 +202,32 @@ p {
     left: 20px;
 }
 
+.link-pos::after, .erea-map-pos::after {
+    content : url('images/read_more_yellow.png');
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+}
+
+.erea-map-pos {
+    right: 20px;
+}
+
+.north-pos {
+    top: 50px;
+}
+
+.center-pos {
+    top: 70px;
+}
+
+.south-pos {
+    top: 90px;
+}
+
 .img-background {
     margin: 0 auto;
     display: block;
-}
-
-.erea-map {
-    top: 50px;
-    right: 10px;
 }
 
 h3 {
