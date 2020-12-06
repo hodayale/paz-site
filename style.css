@@ -88,7 +88,7 @@ nav > ul > li:hover > .dropdown {
     text-decoration: none;
 }
 
-#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover, .contact-design:hover, .contact-top-line-design > a:hover{
+#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover, .contact-design:hover, .contact-top-line-design > a:hover, .text-design > a:hover{
     text-decoration: underline;
     color:#005CA0;
 }
@@ -316,14 +316,20 @@ h3 {
     width: 100%;
 }
 
-#contact-form{
+.text-back-design {
     border: 1px solid darkgray;
-    width: 400px;
-    height: 430px;
     border-radius: 0 40px 0 0;
+    background: rgb(237,234,242);
+    background: linear-gradient(0deg, rgba(237,234,242,1) 0%, rgba(254,253,255,1) 25%);
+    margin-bottom: 20px;
 }
 
-#contact-form > h2 {
+#contact-form{
+    width: 400px;
+    height: 430px;
+}
+
+h2 {
     margin-right: 20px;
     color: #005ca0;
     font-weight: bold;
@@ -386,5 +392,18 @@ button:hover {
     color: black;
     background: rgb(237,234,242);
     background: linear-gradient(180deg, rgba(237,234,242,1) 0%, rgba(241,177,46,1) 25%);
+}
+
+.text-design {
+    width: 248px;
+    height: 142px;
+    padding: 18px 22px 15px;
+}
+
+.text-design > a {
+    text-decoration: none;
+    color: #005CA0;
+    font-size: 12px;
+    margin-right: 20px;
 }
 
