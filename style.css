@@ -23,9 +23,8 @@ body {
     height: 105px;
 }
 
-.search-row {
-    padding: 10px;
-    margin-right: 450px;
+nav {
+    margin-right: 90px;
 }
 
 nav > ul {
@@ -34,7 +33,7 @@ nav > ul {
 }
 
 nav > ul > li, .dropdown{
-    padding: 0 10px 0 10px;
+    padding: 0 18px 0 18px;
     list-style: none;
 }
 
@@ -46,8 +45,7 @@ nav > ul > li:not(:first-child) {
 nav > ul > li > a, .dropdown > li > a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    
+    font-weight: bold;    
     font-size: 15px;
     position: relative;
 }
@@ -68,10 +66,15 @@ nav > ul > li > a, .dropdown > li > a {
     border-bottom: 1px solid white;
  }
 
-a:hover > .dropdown {
+nav > ul > li:hover > .dropdown {
     display: block;
     position: absolute;
-    top: 105px;
+    z-index: 1;
+    top: 80px;
+}
+
+.dropdown > li:hover {
+    background-color: lightgray;
 }
 
 #language {
@@ -83,13 +86,15 @@ a:hover > .dropdown {
     text-decoration: none;
 }
 
-#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover {
+#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover{
     text-decoration: underline;
     color:#005CA0;
 }
 
 .search-row{
     display: flex;
+    padding: 10px;
+    margin-right: 680px;
 }
 
 #search {
