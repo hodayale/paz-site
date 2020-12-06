@@ -319,7 +319,7 @@ h3 {
 #contact-form{
     border: 1px solid darkgray;
     width: 400px;
-    height: 400px;
+    height: 430px;
     border-radius: 0 40px 0 0;
 }
 
@@ -328,5 +328,63 @@ h3 {
     color: #005ca0;
     font-weight: bold;
     font-size: 15px;
+}
+
+.caption {
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 20px 0 0;
+}
+
+.form-text-design {
+    margin-right: 20px;
+    color: #72716d;
+    font-size: 12px;
+}
+
+.content-design {
+    margin: 0 55px 10px 0;
+}
+
+textarea {
+    margin-right: 15px;
+}
+
+#first-name {
+    margin-right: 14px;
+}
+
+#phone {
+    margin-right: 30px;
+}
+
+#email {
+    margin-right: 20px;
+}
+
+.button-design {
+    padding: 0 4px;
+    margin-right: 270px;   
+}
+
+button {
+    background: rgb(237,234,242);
+    background: linear-gradient(180deg, rgba(237,234,242,1) 0%, rgba(0,92,160,1) 25%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 8px 0 0;
+    line-height: 21px;
+    width: 40px;
+    font-size: 14px;
+}
+
+button:hover {
+    color: black;
+    background: rgb(237,234,242);
+    background: linear-gradient(180deg, rgba(237,234,242,1) 0%, rgba(241,177,46,1) 25%);
 }
 
