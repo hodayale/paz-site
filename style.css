@@ -88,7 +88,7 @@ nav > ul > li:hover > .dropdown {
     text-decoration: none;
 }
 
-#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover, .contact-design:hover, .contact-top-line-design > a:hover, .text-design > a:hover{
+#language:hover, a:hover, .text > a:hover, .footer-content > nav > ul > li:last-child > a:hover, .dropdown > li > a:hover, .contact-with-triangle:hover, .contact-top-line-design > a:hover, .text-design > a:hover{
     text-decoration: underline;
     color:#005CA0;
 }
@@ -261,31 +261,60 @@ h3 {
 /**********Contact page style************/
 .contact-column {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    margin-top: 10px;
+    height: 600px;
+    margin-right: 20px;
+}
+
+.contact-align-item {
+    align-items: flex-end;
+    margin-top: 50px;
 }
 
 .contact-design {
     background: rgb(237,234,242);
     background: linear-gradient(180deg, rgba(237,234,242,1) 70%, rgba(182,178,178,1) 100%);
-    text-decoration: none;
-    width: 110px;
+    width: 90px;
     height: 36px;
     padding: 10px 10px 0px 80px;
-    margin-top: 50px;
+    border-top: 1px solid #aaaaa8;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;     
+    border-right: 8px solid #005ca0; 
+    z-index: 1;
+    margin-right: -10px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.contact-with-triangle{
+    text-decoration: none;
     color: black;
+    margin-right: 5px;
 }
 
 .row-contact {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; 
 }
 
 .contact-top-line-design {
     font-size: 12px;
+}
+
+.contact-more-details-align {
+    margin-top: 100px;
+}
+
+.text-back-design-align {
+    margin-bottom: 30px;
 }
 
 .contact-top-line-design > p {
@@ -300,14 +329,13 @@ h3 {
 
 .contact-top-line-design {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
-    margin-right: 10px;
-    width: 170px;
+    justify-content: space-between;
+    width: 105px;
 }
 
 .headline-contact {
+    color: #72716d;
     font-size: 15px;
     font-weight: bold;
     border-bottom: 1px solid #cbcbcb;
@@ -317,15 +345,24 @@ h3 {
 }
 
 .text-back-design {
-    border: 1px solid darkgray;
+    border: 1px solid #CCCCCC;
     border-radius: 0 40px 0 0;
     background: rgb(237,234,242);
     background: linear-gradient(0deg, rgba(237,234,242,1) 0%, rgba(254,253,255,1) 25%);
-    margin-bottom: 20px;
+}
+
+.text-back-design-width {
+    width: 400px;
+    min-height: 332px;
+    padding: 12px 18px;
 }
 
 #contact-form{
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
     height: 430px;
 }
 
@@ -351,34 +388,49 @@ h2 {
     font-size: 12px;
 }
 
+
 .content-design {
-    margin: 0 55px 10px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
 }
 
-textarea {
-    margin-right: 15px;
+.label-flex, .input-flex {
+    display: flex;
+    flex-direction: column;
 }
 
-#first-name {
-    margin-right: 14px;
+.label-flex {
+    align-items: flex-start;
+    margin-left: 10px;
 }
 
-#phone {
-    margin-right: 30px;
+.input-flex {
+    align-items: flex-end;
 }
 
-#email {
+.label-design {
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+
+.input-design {
+    margin-bottom: 15px;
+}
+
+#content-of-contact {
     margin-right: 20px;
 }
 
 .button-design {
-    padding: 0 4px;
-    margin-right: 270px;   
+    padding: 0 4px; 
+    margin: 10px 200px 0 0;  
 }
 
 button {
-    background: rgb(237,234,242);
-    background: linear-gradient(180deg, rgba(237,234,242,1) 0%, rgba(0,92,160,1) 25%);
+    background: rgb(155,217,251);
+    background: linear-gradient(180deg, rgba(155,217,251,1) 0%, rgba(5,116,198,1) 38%);
     color: white;
     font-weight: bold;
     border: none;

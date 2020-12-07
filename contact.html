@@ -97,52 +97,49 @@
         </div>
     </header>
     <main>
-        <div class="contact-column">
-            <div class="contact-column">
+        <div class="row-contact">
+            <div class="contact-column contact-align-item">
                 <div class="contact-design">
-                    <a href="contact.html">צור קשר</a>
+                    <div class="triangle"></div>
+                    <a class="contact-with-triangle" href="contact.html">צור קשר</a>
                 </div>
             </div>
-            <div class="contact-column">
-                <div class="row-contact">
-                    <div class="contact-top-line-design">
-                        <a href="index.html">עמוד הבית</a><p> > צור קשר </p>
-                    </div>
-                    <h1 class="headline-contact">צור קשר</h1>
-                    <div class="text-back-design">
-                        <form id="contact-form">
-                            <h2>צור קשר</h2>
-                            <span class="caption">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
-                            <span class="form-text-design">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
-                            <div class="content-design">
-                                <label class="form-text-design" for="first-name">* שם פרטי</label>
-                                <input type="text" name="first-name" id="first-name" required>
+            <div class="contact-column contact-form-align">
+                <div class="contact-top-line-design">
+                    <a href="index.html">עמוד הבית</a><p> > צור קשר </p>
+                </div>
+                <h1 class="headline-contact">צור קשר</h1>
+                <div class="text-back-design text-back-design-width">                        
+                    <h2>צור קשר</h2>
+                    <span class="caption">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
+                    <span class="form-text-design">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
+                    <form id="contact-form">
+                        <div class="content-design">
+                            <div class="label-flex">
+                                <label class="form-text-design label-design" for="first-name">* שם פרטי</label>
+                                <label class="form-text-design label-design" for="last-name">* שם משפחה</label>
+                                <label class="form-text-design label-design" for="phone">* טלפון</label>
+                                <label class="form-text-design label-design" for="email">* E-mail</label>
                             </div>
-                            <div class="content-design">
-                                <label class="form-text-design" for="last-name">* שם משפחה</label>
-                                <input type="text" name="last-name" id="last-name" required>
+                            <div class="input-flex">
+                                <input class="input-design" type="text" name="first-name" id="first-name" required>
+                                <input class="input-design" type="text" name="last-name" id="last-name" required>
+                                <input class="input-design" type="text" name="phone" id="phone" required>
+                                <input class="input-design" type="email" name="email" id="email" required>
                             </div>
-                            <div class="content-design">
-                                <label class="form-text-design" for="phone">* טלפון</label>
-                                <input type="text" name="phone" id="phone" required>
-                            </div>
-                            <div class="content-design">
-                                <label class="form-text-design" for="email">* E-mail</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <div class="content-design">
-                                <textarea name="content-of-contact" id="content-of-contact" cols="32" rows="10" placeholder="תוכן הפניה"></textarea>
-                            </div>
-                            <div class="button-design">
-                                <button>שלח</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        
+                        <div class="content-design">
+                            <textarea name="content-of-contact" id="content-of-contact" cols="33" rows="10" placeholder="תוכן הפניה"></textarea>
+                        </div>
+                        <div class="button-design">
+                            <button>שלח</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="contact-column">
-                <div class="row-contact">
-                    <div class="text-back-design">
+            <div class="contact-column contact-more-details-align">
+                    <div class="text-back-design text-back-design-align">
                         <div class="text-design">
                             <h2>פרטי יצירת קשר</h2>
                             <span class="caption">פז חברת נפט בע"מ</span>
@@ -161,7 +158,6 @@
                             <a href="#">לחצו כאן&gt;&gt;</a>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </main>
